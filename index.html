@@ -3,43 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho - Educação e Cidadania</title>
+    <title>Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo Agrinho" class="logo">
-        <h1>Agrinho</h1>
         <nav>
+            <h1>Agrinho 2026</h1>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#atividades">Atividades</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre o Agrinho</h2>
-            <p>O Agrinho é um programa educacional que incentiva valores como cidadania, ética, solidariedade e sustentabilidade nas escolas.</p>
-            <img src="images/escola.jpg" alt="Escola participando do Agrinho">
-        </section>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Agrinho 2026!</h2>
+            <p>Incentivando crianças e jovens a desenvolver cidadania, educação e sustentabilidade.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </section>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <p>Alunos de todo o estado participam criando trabalhos, redações e projetos sobre temas sociais e ambientais.</p>
-            <img src="images/alunos.jpg" alt="Alunos participando do Agrinho">
-        </section>
+    <section id="sobre" class="about">
+        <h2>Sobre o Agrinho</h2>
+        <p>O Agrinho é um programa educacional que incentiva valores de cidadania, respeito, meio ambiente e aprendizado, promovendo atividades para escolas de todo o Brasil.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Missão</h3>
+                <p>Promover educação cidadã e ambiental de forma prática e envolvente.</p>
+            </div>
+            <div class="card">
+                <h3>Visão</h3>
+                <p>Formar jovens conscientes e engajados com sua comunidade.</p>
+            </div>
+            <div class="card">
+                <h3>Valores</h3>
+                <p>Respeito, solidariedade, responsabilidade e sustentabilidade.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Para mais informações, acesse o site oficial ou entre em contato com a secretaria de educação da sua cidade.</p>
-        </section>
-    </main>
+    <section id="atividades" class="activities">
+        <h2>Atividades</h2>
+        <ul>
+            <li>Concursos de redação e desenho</li>
+            <li>Projetos de cidadania e sustentabilidade</li>
+            <li>Palestras educativas e workshops</li>
+            <li>Eventos de integração escolar</li>
+        </ul>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Agrinho. Todos os direitos reservados.</p>
+        <p>© 2026 Agrinho. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
